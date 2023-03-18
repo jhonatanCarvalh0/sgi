@@ -10,6 +10,8 @@ import { SublevelMenuComponent } from './components/sidenav/sublevel-menu.compon
 import { BensMoveisComponent } from './pages/bens-moveis/bens-moveis.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { CdkMenuModule } from '@angular/cdk/menu';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,13 @@ import { HeaderComponent } from './components/header/header.component';
     BensMoveisComponent,
     HeaderComponent,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    OverlayModule,
+    CdkMenuModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
