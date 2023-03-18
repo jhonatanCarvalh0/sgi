@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-//root
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-//components
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { LandingComponent } from './pages/landing/landing.component';
+import { BodyComponent } from './components/body/body.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { BensMoveisComponent } from './pages/bens-moveis/bens-moveis.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    FooterComponent,
-    LandingComponent,
+    BodyComponent,
+    SidenavComponent,
+    DashboardComponent,
+    BensMoveisComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
