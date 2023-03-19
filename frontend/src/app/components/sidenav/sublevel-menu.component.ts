@@ -59,7 +59,10 @@ import { fadeInOut, INavbarData } from './helper';
           routerLinkActive="active-sublevel"
           [routerLinkActiveOptions]="{ exact: true }"
         >
-          <i class="sublevel-link-icon fa fa-circle"></i>
+          <i
+            class="sublevel-link-icon fa fa-chevron-right fa-5x"
+            aria-hidden="true"
+          ></i>
           <span class="sublevel-link-text" @fadeInOut *ngIf="collapsed">{{
             item.label
           }}</span>

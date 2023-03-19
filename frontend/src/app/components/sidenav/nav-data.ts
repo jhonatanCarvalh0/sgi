@@ -1,76 +1,71 @@
 import { INavbarData } from './helper';
 
 export const navbarData: INavbarData[] = [
+  //Dashboard
   {
     routeLink: 'dashboard',
     icon: 'fal fa-home',
     label: 'Dashboard',
   },
+  //Bens móveis
   {
-    routeLink: 'products',
+    routeLink: 'bens-moveis',
     icon: 'fal fa-box-open',
-    label: 'Products',
+    label: 'Bens móveis',
     items: [
       {
-        routeLink: 'products/level1.1',
-        label: 'Level 1.1',
+        routeLink: 'bens-moveis/ingresso',
+        label: 'Ingresso de Bens Móveis',
+      },
+      {
+        routeLink: 'bens-moveis/incorporacao',
+        label: 'Incorporação de Bens Móveis',
+      },
+      {
+        routeLink: 'bens-moveis/inventario',
+        label: 'Inventário',
+      },
+      {
+        routeLink: 'bens-moveis/desfazimento-baixa',
+        label: 'Desfazimento/Baixa',
+      },
+      {
+        routeLink: 'bens-moveis/ingresso-saida-temporaria',
+        label: 'Ingresso e Saída Temporária',
+      },
+      {
+        routeLink: 'bens-moveis/procedimentos-contabeis',
+        label: 'Procedimentos contábeis',
         items: [
           {
-            routeLink: 'products/level2.1',
-            label: 'Level 2.1',
+            routeLink: 'bens-moveis/procedimentos-contabeis/avaliacao',
+            label: 'Avaliação',
           },
           {
-            routeLink: 'products/level2.2',
-            label: 'Level 2.2',
-            items: [
-              {
-                routeLink: 'products/level3.1',
-                label: 'Level 3.1',
-              },
-              {
-                routeLink: 'products/level3.2',
-                label: 'Level 3.2',
-              },
-            ],
+            routeLink: 'bens-moveis/procedimentos-contabeis/reavaliacao',
+            label: 'Reavaliação',
+          },
+          {
+            routeLink: 'bens-moveis/procedimentos-contabeis/reducao-ao-valor-recuperavel',
+            label: 'Redução ao valor recuperável',
+          },
+          {
+            routeLink: 'bens-moveis/procedimentos-contabeis/depreciacao',
+            label: 'Depreciação',
+          },
+          {
+            routeLink: 'bens-moveis/procedimentos-contabeis/amortizacao',
+            label: 'Amortização',
+          },
+          {
+            routeLink: 'bens-moveis/procedimentos-contabeis/exaustao',
+            label: 'Exaustão',
           },
         ],
       },
-      {
-        routeLink: 'products/level1.2',
-        label: 'Level 1.2',
-      },
     ],
   },
-  {
-    routeLink: 'statistics',
-    icon: 'fal fa-chart-bar',
-    label: 'Statistics',
-  },
-  {
-    routeLink: 'coupens',
-    icon: 'fal fa-tags',
-    label: 'Coupens',
-    items: [
-      {
-        routeLink: 'coupens/list',
-        label: 'List Coupens',
-      },
-      {
-        routeLink: 'coupens/create',
-        label: 'Create Coupens',
-      },
-    ],
-  },
-  {
-    routeLink: 'pages',
-    icon: 'fal fa-file',
-    label: 'Pages',
-  },
-  {
-    routeLink: 'media',
-    icon: 'fal fa-camera',
-    label: 'Media',
-  },
+  //Settings
   {
     routeLink: 'settings',
     icon: 'fal fa-cog',
