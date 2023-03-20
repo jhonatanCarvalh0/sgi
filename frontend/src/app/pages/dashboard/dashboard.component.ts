@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+
+// core components
 
 @Component({
   selector: 'app-dashboard',
@@ -6,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dashboard.component.scss'],
 })
 export class DashboardComponent implements OnInit {
-  constructor() {}
+  public datasets: any;
+  public data: any;
+  public salesChart: any;
+  public clicked: boolean = true;
+  public clicked1: boolean = false;
 
-  ngOnInit(): void {}
+  ngOnInit() {}
 }
